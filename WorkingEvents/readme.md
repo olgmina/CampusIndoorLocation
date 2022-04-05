@@ -16,3 +16,6 @@
 
 /campus/work/id 
 
+{
+    }
+
