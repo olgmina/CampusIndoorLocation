@@ -1,2 +1,3 @@
 # CampusIndoorLocation
-building location service for VGTU
+
+_сервисы локации мероприятий в Университете_
