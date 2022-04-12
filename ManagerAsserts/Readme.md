@@ -15,8 +15,10 @@
 ## Модель данных
 
 ## API сервиса
+/api/managerasserts — список всех оборудований
 
-/campus/work/id 
+/api/managerasserts/{assertId} — конкретное оборудование
 
-{
-    }
+/api/managerassert/add — добавление оборудования
+
+/api/delete — удаление оборудования
