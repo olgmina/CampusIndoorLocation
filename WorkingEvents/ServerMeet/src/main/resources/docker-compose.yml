@@ -1,0 +1,46 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ../../../
+      dockerfile: src/main/resources/Dockerfile
+    command: catalina.sh run
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    networks:
+      mynetwork:
+        ipv4_address: 192.28.0.2
+
+  api_db:
+    image: mysql
+    command: --init-file /data/application/init.sql
+    ports:
+      - "3307:3306"
+    restart: always
+    volumes:
+      - ./meeting_db_meet.sql:/data/application/init.sql
+    environment:
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_DATABASE=my_db
+      - MYSQL_ROOT_PASSWORD=admin
+    networks:
+      mynetwork:
+        ipv4_address: 192.28.0.3
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8081:8081"
+    networks:
+      mynetwork:
+        ipv4_address: 192.28.0.4
+networks:
+  mynetwork:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.28.0.0/16
+          gateway: 192.28.0.1
