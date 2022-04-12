@@ -1,4 +1,4 @@
-## Сервер-запрос
+# Сервер-запрос
 Цель: поиск информации о мероприятии по заданным параметрам.
 
 В него входят:
@@ -13,3 +13,18 @@
 
 -Поиск по дню недели.
 
+## Необходимые компоненты
+
+-Intelji idea
+
+-Java
+
+-База данных(MySQL)
+
+Установите и подключите базу данных к Intelji idea. После подключения и запуска приложения в базе данных автоматически создастся таблица.
+
+## Сценарий использования
+# ![uml.drawio.png](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/uml.drawio.png)
+
+## Зависимости
+# ![DC.jpg](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/DC.jpg)
