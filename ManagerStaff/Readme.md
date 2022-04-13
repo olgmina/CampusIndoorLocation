@@ -16,7 +16,10 @@
 
 ## API сервиса
 
-/campus/work/id 
+/api/managerStaff — список всех сотрудников
 
-{
-    }
+/api/managerStaff/{StaffId} — Информация о конкретном сотруднике
+
+/api/managerStaff/add — добавление сотрудника
+
+/api/delete — удаление данных о сотруднике
