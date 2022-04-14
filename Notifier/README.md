@@ -2,9 +2,11 @@
 
 Ответственность: связь событий и участников
 
-## Сценарий использования
+## Сценарии использования
 
-![image]()
+![usecase](https://user-images.githubusercontent.com/26046873/163400047-5477925a-7e9d-401f-a7f3-a31760a4519f.png)
+
+![usecase2](https://user-images.githubusercontent.com/26046873/163400092-8f808fe9-d47e-448d-abc5-fdf331399b5d.png)
 
 ## Пользовательские истории
 
@@ -14,7 +16,9 @@
 
 Как Руководитель я хочу, чтобы участники были уведомлены о событии
 
-## Модель данных
+## Диаграмма классов
+
+![class-diagram](https://user-images.githubusercontent.com/26046873/163399522-19764e89-9ce6-4d0a-953f-eda5cf5144d8.png)
 
 ## API сервиса
 
