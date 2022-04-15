@@ -14,6 +14,9 @@
 
 ## Модель данных
 
+## Зависимости
+![image](https://user-images.githubusercontent.com/82897496/163626377-7cd3255e-5b7e-4b8d-9a45-8152ad953572.png)
+
 ## API сервиса
 /api/managerStaff — список всех сотрудников
 
