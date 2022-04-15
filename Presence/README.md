@@ -7,7 +7,7 @@ _Ответственность: явка присутствия на мероп
 
 ![usecase1](Presence/diagrams/Presence-Controller.png)
 
-![usecase2](Presence/diagrams/Presence-Visitor.png)
+![usecase2](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Presence-Controller.png)
 
 ## Пользовательские истории
 
