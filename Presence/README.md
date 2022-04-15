@@ -17,7 +17,7 @@ _Ответственность: явка присутствия на мероп
 
 ## Модель данных
 
-![data-model-diagram]
+![data-model-diagram](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Presence-model.png)
 
 ## API сервиса
 
