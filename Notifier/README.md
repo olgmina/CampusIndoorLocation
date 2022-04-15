@@ -20,7 +20,7 @@ _Ответственность: свободное создание связи 
 
 ## Модель данных
 
-![data-model-diagram](https://user-images.githubusercontent.com/26046873/163575041-2b93a57e-d156-42ce-a6c2-8840b57c0bb7.png)
+![data-model-diagram](https://user-images.githubusercontent.com/26046873/163575272-8a942094-dee4-428e-bacb-df7e28f571fa.png)
 
 ## API сервиса
 
