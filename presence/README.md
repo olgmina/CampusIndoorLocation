@@ -5,7 +5,7 @@ _Ответственность: явка присутствия на мероп
 
 ## Сценарии использования
 
-![usecase1]
+![usecase1] (Presence-Controller.jpg)
 
 ![usecase2]
 
