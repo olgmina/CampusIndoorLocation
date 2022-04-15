@@ -5,9 +5,9 @@ _Ответственность: явка присутствия на мероп
 
 ## Сценарии использования
 
-![usecase1] 
+![usecase1](Presence/diagrams/Presence-Controller.png)
 
-![usecase2]
+![usecase2](Presence/diagrams/Presence-Visitor.png)
 
 ## Пользовательские истории
 
