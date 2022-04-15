@@ -15,8 +15,10 @@
 ## Модель данных
 
 ## API сервиса
+/api/managerStaff — список всех сотрудников
 
-/campus/work/id 
+/api/managerStaff/{StaffId} — Информация о конкретном сотруднике
 
-{
-    }
+/api/managerStaff/add — добавление сотрудника
+
+/api/delete — удаление данных о сотруднике
