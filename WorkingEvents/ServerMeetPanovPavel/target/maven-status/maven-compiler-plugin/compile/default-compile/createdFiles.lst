@@ -1,6 +1,0 @@
-org\example\dao\ImplDaoMeeting.class
-org\example\dao\DaoMeeting.class
-org\example\service\MeetingServiceImpl.class
-org\example\service\MeetingService.class
-org\example\entity\Meeting.class
-org\example\controller\MyRestController.class
