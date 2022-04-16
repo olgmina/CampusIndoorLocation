@@ -6,20 +6,28 @@
 </head>
 <body>
 <div>
+    <form method="post">
+        <input type="text" name="comment" placeholder="Введите комментарий" />
+        <button type="submit">Я ЗДЕСЬ</button>
+    </form>
+</div>
+<div>
     <form method="post" action="getNameTopic">
         <input type="text" name="filter" placeholder="Введите topic" />
         <button type="submit">Найти</button>
     </form>
     <div>Количество участников, посетивших мероприятие:
-        <output>0</output>
+        <div>{{amount}}</div>
     </div>
 </div>
 {{#messages}}
     <div>
-    <b>{{id}}</b>
-        <b>{{id_event}}</b>
+        <b>{{id}}</b>
+        <b>{{comment}}</b>
+        <b>{{event}}</b>
         <b>{{topicName}}</b>
+        <b>{{visitor}}</b>
     </div>
-    {{/messages}}
+{{/messages}}
 </body>
 </html>
