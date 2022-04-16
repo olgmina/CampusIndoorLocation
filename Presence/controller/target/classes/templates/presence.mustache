@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <form method="post" action="getNameTopic">
+        <input type="text" name="filter" placeholder="Введите topic" />
+        <button type="submit">Найти</button>
+    </form>
+    <div>Количество участников, посетивших мероприятие:
+        <output>0</output>
+    </div>
+</div>
+{{#messages}}
+    <div>
+    <b>{{id}}</b>
+        <b>{{id_event}}</b>
+        <b>{{topicName}}</b>
+    </div>
+    {{/messages}}
+</body>
+</html>
