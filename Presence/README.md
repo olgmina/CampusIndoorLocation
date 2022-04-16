@@ -8,7 +8,7 @@ _Ответственность: явка присутствия на мероп
 
 ![usecase1](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Presence-Controller.png)
 
-![usecase2](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Presence-Visitor.png)
+![usecase2](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Visitor.png)
 
 ## Пользовательские истории
 
@@ -18,7 +18,7 @@ _Ответственность: явка присутствия на мероп
 
 ## Модель данных
 
-![data-model-diagram](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Presence-model.png)
+![data-model-diagram](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/model.png)
 
 ## API сервиса
 
