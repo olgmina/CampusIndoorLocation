@@ -3,6 +3,7 @@ package com.example.managerasserts.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+import org.hibernate.annotations.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -32,9 +33,9 @@ public class ManagerStaff {
     private LocalDateTime createTime;
     private LocalDateTime modifiedTime;
 
-    public ManagerStaff(String assertId, String locationName, int audiance, int building, LocalDateTime date,String assertName ) {
-        this.assertId = assertId;
-        this.assertName = assertName;
+    public ManagerStaff(String staffId, String locationName, int audiance, int building, LocalDateTime date,String staffName ) {
+        this.staffId = stafftId;
+        this.staffName = staffName;
         Personal location = new Personal(locationName, audiance, building);
         this.locationName = location.getName();
         this.audiance = location.getAudiance();

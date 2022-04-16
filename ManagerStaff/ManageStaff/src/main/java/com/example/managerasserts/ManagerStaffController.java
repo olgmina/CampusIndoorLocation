@@ -21,29 +21,29 @@ public class ManagerStaffController {
     private ManagerStaffRepository repository;
 
     @Autowired
-    public ManagerStaffController(ManagerAssertsRepository repository) {
+    public ManagerStaffController(ManagerStaffRepository repository) {
         this.repository = repository;
     }
 
-    @GetMapping("/managerasserts")
+    @GetMapping("/managerstaff")
     public ResponseEntity<Iterable<ManagerStaff>> getManagerAsserts(){
         return ResponseEntity.ok(repository.findAll());
     }
 
-    @GetMapping("/managerasserts/{assertId}")
-    public ResponseEntity<Iterable<ManagerStaff>> getAssertByAssertId(@PathVariable String assertId){
-        return ResponseEntity.ok(repository.findByAssertId(assertId));
+    @GetMapping("/managerstaff/{staffId}")
+    public ResponseEntity<Iterable<ManagerStaff>> getAssertByAssertId(@PathVariable String staffId){
+        return ResponseEntity.ok(repository.findByAssertId(staffId));
     }
 
-    @PutMapping("/managerassert/add")
-    public ResponseEntity<?> addAssert(@Validated @RequestBody ManagerStaff managerStaff, Errors errors){
+    @PutMapping("/managerstaff/add")
+    public ResponseEntity<?> addStaff(@Validated @RequestBody ManagerStaff managerStaff, Errors errors){
         if (errors.hasErrors()) {
             return ResponseEntity.badRequest().
                     body(ManagerStaffValidationErrorBuffer.fromBindingErrors(errors));
         }
         ManagerStaff result = repository.save(managerStaff);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().
-                path("/{id}").buildAndExpand(result.getAssertId()).toUri();
+                path("/{id}").buildAndExpand(result.getStaffId()).toUri();
         return ResponseEntity.created(location).build();
     }
 
