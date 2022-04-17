@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -30,7 +31,7 @@ public class Controller {
         Iterable<Message> messages = messRep.findAll();
         model.put("messages", messages);
         return "presence";
-
+    }
 
 
   /* @PostMapping("api/presence/send")
@@ -46,19 +47,20 @@ public class Controller {
         return "presence";
     }*/
 
-   @PostMapping("api/getNameTopic")
-    public String filter(@RequestParam String filter, Map<String, Object> model, Integer amount){
+    @PostMapping("api/getNameTopic")
+    public String filter(@RequestParam String filter, Map<String, Object> model, Map<String, Object> amount){
         Iterable<Message> messages;
+        Integer total = null;
         if (filter != null && !filter.isEmpty()) {
             messages = messRep.findByTopicName(filter);
-            amount = ((List<Message>) messages).size();
+            total = ((List<Message>) messages).size();
         } else {
             messages = messRep.findAll();
         }
         model.put("messages", messages);
+        amount.put("total", total);
         return "presence";
     }
-
 
   /* public Integer id_event_rand(Integer id_event) {
         id_event = random.nextInt(10);
