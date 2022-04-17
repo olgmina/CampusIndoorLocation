@@ -16,7 +16,6 @@
 
 ## Модель данных
 
-![image](https://user-images.githubusercontent.com/49455695/163654713-a3dca9d3-5b76-4fa6-8e26-c375f60b239e.png)
 
 ## API сервиса
 
