@@ -18,7 +18,7 @@ public class Controller {
     @Autowired
     private MessRep messRep;
 
-  /*  @GetMapping("api/presence/send")
+   /* @GetMapping("api/presence/send")
     public String presence(Map<String, Object> model) {
         Iterable<Message> messages = messRep.findAll();
         model.put("messages", messages);
@@ -30,21 +30,21 @@ public class Controller {
         Iterable<Message> messages = messRep.findAll();
         model.put("messages", messages);
         return "presence";
-    }
 
 
-   @PostMapping("api/presence/send")
-    public String send(@RequestParam(name = "comment", required = false) String comment, String event, String topicName, String visitor, Map<String, Object> model) {
+
+  /* @PostMapping("api/presence/send")
+    public String add(String event, String topicName, String visitor, @RequestParam(name = "comment", required = false) String comment, Map<String, Object> model) {
         int rand = random.nextInt(5);
         event = "event" + String.valueOf(rand);
         topicName = "topic" + String.valueOf(rand);
         visitor = "visitor";
-        Message message = new Message(comment, event, topicName, visitor);
+        Message message = new Message(event, topicName, visitor, comment);
         messRep.save(message);
         Iterable<Message> messages = messRep.findAll();
         model.put("messages", messages);
         return "presence";
-    }
+    }*/
 
    @PostMapping("api/getNameTopic")
     public String filter(@RequestParam String filter, Map<String, Object> model, Integer amount){

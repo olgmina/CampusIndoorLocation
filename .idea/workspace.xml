@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e421e643-7350-4ad3-9ab0-2d1c3aa080e1" name="Changes" comment="добавление цели проекта">
+    <list default="true" id="e421e643-7350-4ad3-9ab0-2d1c3aa080e1" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649419907035</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1650154270094</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650154270094</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -124,7 +134,8 @@
     <MESSAGE value="example component" />
     <MESSAGE value="разметка" />
     <MESSAGE value="добавление цели проекта" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление цели проекта" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

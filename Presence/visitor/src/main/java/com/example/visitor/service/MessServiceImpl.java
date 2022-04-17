@@ -30,7 +30,7 @@ public class MessServiceImpl implements MessService{
     @Override
     public void send(Message message) {
         log.info("<= sending {}", writeValueAsString(message));
-        kafkaMessageTemplate.send("server.starship", message);
+        kafkaMessageTemplate.send("server.message", message);
     }
 
     @Override

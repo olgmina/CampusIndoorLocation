@@ -17,16 +17,22 @@ public class Message extends AbstractMessage{
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
 
-    private Integer id_event;
+    private String event;
 
     private String topicName;
+
+    private String visitor;
+
+    private String comment;
 
     public Message() {
     }
 
-    public Message(Integer id_event, String topicName) {
-        this.id_event = id_event;
+    public Message(String event, String topicName, String visitor, String comment) {
+        this.event = event;
         this.topicName = topicName;
+        this.visitor = visitor;
+        this.comment = comment;
     }
 
     public Integer getId() {
@@ -37,12 +43,12 @@ public class Message extends AbstractMessage{
         this.id = id;
     }
 
-    public Integer getId_event() {
-        return id_event;
+    public String getEvent() {
+        return event;
     }
 
-    public void setId_event(Integer id_event) {
-        this.id_event = id_event;
+    public void setEvent(String event) {
+        this.event = event;
     }
 
     public String getTopicName() {
@@ -51,5 +57,21 @@ public class Message extends AbstractMessage{
 
     public void setTopicName(String topicName) {
         this.topicName = topicName;
+    }
+
+    public String getVisitor() {
+        return visitor;
+    }
+
+    public void setVisitor(String visitor) {
+        this.visitor = visitor;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 }

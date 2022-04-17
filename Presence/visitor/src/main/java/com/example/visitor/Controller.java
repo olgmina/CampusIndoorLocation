@@ -30,7 +30,6 @@ public class Controller {
     final Random random = new Random();
     @Autowired
     private MessRep messRep;
-    public String number;
 
     @GetMapping("api/presence/send")
     public String presence(Map<String, Object> model) {
@@ -41,28 +40,20 @@ public class Controller {
 
 
     @PostMapping("api/presence/send")
-    public String send(Integer id_event, String topicName, Map<String, Object> model) {
-        id_event_rand(id_event);
-        topicName_rand(topicName);
-        Message message = new Message(id_event, topicName);
-        send(message);
+    public String add(String event, String topicName, String visitor, @RequestParam(name = "comment", required = false) String comment, Map<String, Object> model) {
+        int rand = random.nextInt(5);
+        event = "event" + String.valueOf(rand);
+        topicName = "topic" + String.valueOf(rand);
+        visitor = "visitor";
+        Message message = new Message(event, topicName, visitor, comment);
         messRep.save(message);
         Iterable<Message> messages = messRep.findAll();
         model.put("messages", messages);
         return "presence";
     }
 
+    @PostMapping("api/presence/send")
     public void send(@RequestBody Message message) {
         messService.send(message);
-    }
-
-    public Integer id_event_rand(Integer id_event) {
-        id_event = random.nextInt(10);
-        return id_event;
-    }
-
-    public String topicName_rand(String topicName) {
-        topicName = "topic" + String.valueOf(random.nextInt(3));
-        return topicName;
     }
 }
