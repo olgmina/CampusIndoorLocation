@@ -16,6 +16,7 @@
 
 ## Модель данных
 
+![image](https://user-images.githubusercontent.com/49455695/163876855-f4c57e8c-9529-40db-b4be-4549c29c0ac1.png)
 
 ## API сервиса
 
@@ -23,6 +24,12 @@ get /meeting </br>
 get /meeting/{id} </br>
 post /meeting </br>
 delete /meeting/{id} </br>
+
+## Диаграмма вариантов использования
+![image](https://user-images.githubusercontent.com/49455695/163876490-ec827402-00e5-4ab3-9570-6abae252d61b.png)
+
+## Диаграмма классов
+![image](https://user-images.githubusercontent.com/49455695/163875682-4a08186f-846f-482e-82bf-86aa52c14fc1.png)
 
 ## kafka docker
 
