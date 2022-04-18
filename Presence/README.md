@@ -20,6 +20,10 @@ _Ответственность: явка присутствия на мероп
 
 ![data-model-diagram](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/model.png)
 
+![diagram-class_controller](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/diag_class_controller.png)
+
+![diagram-class_visitor](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/diag_class_visitor.png)
+
 ## API сервиса
 
 /api/presence/send — фиксация присутствия
