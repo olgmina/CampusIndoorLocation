@@ -11,7 +11,7 @@
 	<groupId>com.client</groupId>
 	<artifactId>client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>client</name>
+	<name>planer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>

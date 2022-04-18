@@ -1,10 +1,11 @@
-package client;
+package planer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.sql.Time;
 import java.util.List;
 
 @Controller
@@ -12,11 +13,7 @@ public class LocationController {
     @Autowired
     private EventsRepository eventsRepository;
 
-    @GetMapping("/location")
-    public String getLocation(Model model) {
 
-        return "location_page";
-    }
 
     @GetMapping("/Find")
     public String FindLoc(String location, String typeUniversity, Model model) {
@@ -27,10 +24,10 @@ public class LocationController {
 
     }
 
-    @GetMapping("/dayOfWeek")
-    public String getDayOfWeek(Model model) {
+    @GetMapping("/form")
+    public String getFrom(Model model) {
 
-        return "dayOfWeek_page";
+        return "form_requests";
     }
 
     @GetMapping("/Find2")
@@ -40,23 +37,12 @@ public class LocationController {
         return "events_page";
     }
 
-    @GetMapping("/Org")
-    public String getOrganization(Model model) {
-
-        return "organizator_page";
-    }
 
     @GetMapping("/Find3")
     public String FindOrganizator(String organization, Model model) {
         List<Event> event3 = eventsRepository.findByOrganization(organization);
         model.addAttribute("events", event3);
         return "events_page";
-    }
-
-    @GetMapping("/name")
-    public String getName(Model model) {
-
-        return "name_page";
     }
 
     @GetMapping("/Find4")
@@ -66,7 +52,15 @@ public class LocationController {
         return "events_page";
 
     }
+
+    @GetMapping("/Find5")
+    public String FindTime(Time startData, Model model) {
+        List<Event> event5 = eventsRepository.findByStartData(startData);
+
+        model.addAttribute("events", event5);
+        return ("events_page");
+
+    }
+
 }
-
-
 
