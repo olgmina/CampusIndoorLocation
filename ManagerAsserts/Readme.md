@@ -13,8 +13,8 @@
 Как Руководитель я оцениваю загруженность оборудования по времени 
 
 ## Модель данных
-ERD диаграмма
-![3](https://user-images.githubusercontent.com/73663755/163939383-6562e57c-7202-4005-91a1-ecc22ae20642.jpg)
+ERD диаграмма![3](https://user-images.githubusercontent.com/73663755/163939504-2811ad5e-5f64-44b2-afd6-2f9b07c897b4.jpg)
+
 
 Диаграмма классов
 ![diagr](https://user-images.githubusercontent.com/73663755/163938651-088f032d-394e-483b-858d-81ed210b78e6.jpeg)
