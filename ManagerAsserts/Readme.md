@@ -28,7 +28,8 @@ ERD диаграмма
 ![3](https://user-images.githubusercontent.com/73663755/164001755-c1a87489-caab-4cb4-be52-734c819d6dd9.jpg)
 
 Диаграмма классов
-![diagr](https://user-images.githubusercontent.com/73663755/163938651-088f032d-394e-483b-858d-81ed210b78e6.jpeg)
+![ManagerAssertsApplication](https://user-images.githubusercontent.com/73663755/164009415-8bdb0e8a-096b-4cba-9e09-8f391ab490b0.png)
+
 
 ## API сервиса
 /api/managerasserts — список всех оборудований
