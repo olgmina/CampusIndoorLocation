@@ -24,16 +24,15 @@
 
 ## Модель данных
 ![3 drawio](https://user-images.githubusercontent.com/82897496/163939607-78d28ede-680e-4d6d-95c2-03700f9df23e.png)
+## Диаграмма размещения
+![диаграмма размещения](https://user-images.githubusercontent.com/82897496/164014823-29b00e63-c4b9-4cbe-94da-100e7a111c3b.jpg)
 
 ## Зависимости
 ![image](https://user-images.githubusercontent.com/82897496/163626377-7cd3255e-5b7e-4b8d-9a45-8152ad953572.png)
 
 ## API сервиса
 /api/managerStaff — список всех сотрудников
-
 /api/managerStaff/{StaffId} — Информация о конкретном сотруднике
-
 /api/managerStaff/add — добавление сотрудника
-
 /api/delete — удаление списка сотрудников
 /api/managerstaff/{id} - удаление данных о сотруднике
