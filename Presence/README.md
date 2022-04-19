@@ -6,7 +6,11 @@ _Ответственность: явка присутствия на мероп
 
 ## Сценарии использования
 
+### Сценарий 1
+
 ![usecase1](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Presence-Controller.png)
+
+### Сценарий 2
 
 ![usecase2](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/Visitor.png)
 
@@ -18,7 +22,17 @@ _Ответственность: явка присутствия на мероп
 
 ## Модель данных
 
+### ERD-диаграмма
+
 ![data-model-diagram](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/model.png)
+
+### Диаграмма классов для сценария 1
+
+![diagram-class_controller](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/diag_class_controller.png)
+
+### Диаграмма классов для сценария 2
+
+![diagram-class_visitor](https://github.com/olgmina/CampusIndoorLocation/raw/main/Presence/diagrams/diag_class_visitor.png)
 
 ## API сервиса
 

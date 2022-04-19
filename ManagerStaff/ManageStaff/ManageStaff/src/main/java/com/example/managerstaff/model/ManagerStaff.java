@@ -19,7 +19,7 @@ public class ManagerStaff {
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
     private String id;
     @NonNull
-    private String StaffId;
+    private String staffId;
     @NonNull
     private int audiance;
     @NonNull
@@ -34,7 +34,7 @@ public class ManagerStaff {
     private LocalDateTime modifiedTime;
 
     public ManagerStaff(String staffId, String locationName, int audiance, int building, LocalDateTime date,String staffName ) {
-        this.staffId = stafftId;
+        this.staffId = staffId;
         this.staffName = staffName;
         Personal location = new Personal(locationName, audiance, building);
         this.locationName = location.getName();

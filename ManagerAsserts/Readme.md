@@ -12,7 +12,23 @@
  
 Как Руководитель я оцениваю загруженность оборудования по времени 
 
+## Сценарии использования
+## Сценарий 1 - Руководитель
+![UseCase](https://user-images.githubusercontent.com/73663755/163998961-d030eb2f-1e28-4b37-9ba5-9b4064218da3.jpg)
+
+## Сценарий 2 - Организатор
+![UseCase1](https://user-images.githubusercontent.com/73663755/163998976-92026057-729a-4a6b-9373-bd68a33312c1.jpg)
+
+## Сценарий 3 - Персонал
+![UseCase2](https://user-images.githubusercontent.com/73663755/163999555-1406a7d6-cca3-410d-b640-f32bd0bc1bf1.jpg)
+
 ## Модель данных
+ERD диаграмма
+
+![3](https://user-images.githubusercontent.com/73663755/164001755-c1a87489-caab-4cb4-be52-734c819d6dd9.jpg)
+
+Диаграмма классов
+![diagr](https://user-images.githubusercontent.com/73663755/163938651-088f032d-394e-483b-858d-81ed210b78e6.jpeg)
 
 ## API сервиса
 /api/managerasserts — список всех оборудований
@@ -21,4 +37,8 @@
 
 /api/managerassert/add — добавление оборудования
 
-/api/delete — удаление оборудования
+/api/delete — очистить список оборудований
+
+/api/delete/{assertId} - удалить конкретное оборудование
+
+/api//managerasserts/{assertId}/getStatus - оценить загруженность оборудования

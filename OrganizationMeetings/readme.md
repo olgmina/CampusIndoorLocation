@@ -1,3 +1,60 @@
+# Сервис организации мероприятия
+
+_Ответственность:_ создание, изменение,просмотр и удаление записи о создаваемых Организатором мероприятиях.
+
+Создание подразумевает опредление времени, места и заказ обрудования.
+
+
+## Сценарий использования
+
+![image](https://user-images.githubusercontent.com/49455695/163052384-5c24193e-b9ce-46af-a84e-52163810835b.png)
+
+## Пользовательские истории
+
+Как Организатор я хочу создать свое мероприятие
+
+Как Участник я хочу получить информацию о мероприятии Организатора
+
+Как Руководитель я хочу знать о всех мероприятиях Организатора, которое запланированы и проведены
+
+## Модель данных
+![image](https://user-images.githubusercontent.com/49455695/163654049-a248b3ff-5173-4a20-9988-e1b80c7395ad.png)
+
+## Диаграмма классов
+![image](https://user-images.githubusercontent.com/49455695/163878500-3affab79-a5d5-4306-9208-ccc8f8a85b9e.png)
+
+## API сервиса
+
+get /api/location </br>
+get /api/location/{id}</br>
+delete /api/location/{id}</br>
+post /api/location</br>
+``` json
+    "id": 1,
+    "name": "Актовый зал",
+    "description": "актовый",
+    "equipmentList": [
+      {
+        "id": 1,
+        "name": "Компьюетер",
+        "description": "Хорошое состояние",
+        "conditions": "Чёрный"
+      },
+      {
+        "id": 2,
+        "name": "Монитор",
+        "description": null,
+        "conditions": "Белый"
+      }
+    ],
+    "locationTime": {
+      "id": 1,
+      "timeStart": "2022-04-15 03:57:38",
+      "timeEnd": "2022-04-16 03:57:40"
+    }
+  
+```
+
 # Сервис организации мероприятий 
 
 Планирование мероприятия образовательного процесса
@@ -16,6 +73,7 @@
 
 ## Модель данных
 
+![image](https://user-images.githubusercontent.com/49455695/163876855-f4c57e8c-9529-40db-b4be-4549c29c0ac1.png)
 
 ## API сервиса
 
@@ -23,6 +81,12 @@ get /meeting </br>
 get /meeting/{id} </br>
 post /meeting </br>
 delete /meeting/{id} </br>
+
+## Диаграмма вариантов использования
+![image](https://user-images.githubusercontent.com/49455695/163876490-ec827402-00e5-4ab3-9570-6abae252d61b.png)
+
+## Диаграмма классов
+![image](https://user-images.githubusercontent.com/49455695/163875682-4a08186f-846f-482e-82bf-86aa52c14fc1.png)
 
 ## kafka docker
 
@@ -61,54 +125,3 @@ services:
 2) В powershell </br>
    docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic purchases --from-beginning</br> (Команда получения сообщений из топика) </br>
 
-# Сервис локаций
-
-Ответственность: создание, изменение,просмотр и удаление записи об аудиториях и прочих помещениях Университета
-
-## Сценарий использования
-
-![image](https://user-images.githubusercontent.com/49455695/163052384-5c24193e-b9ce-46af-a84e-52163810835b.png)
-
-## Пользовательские истории
-
-Как Организатор я хочу изменить место _моего_ мероприятия
-
-Как Участник я хочу знать когда проводится такое-то мероприятия использующие оборудование
-
-Как Руководитель я оцениваю загруженность помещений по времени
-
-## Модель данных
-![image](https://user-images.githubusercontent.com/49455695/163654049-a248b3ff-5173-4a20-9988-e1b80c7395ad.png)
-
-
-## API сервиса
-
-get /api/location </br>
-get /api/location/{id}</br>
-delete /api/location/{id}</br>
-post /api/location</br>
-``` json
-    "id": 1,
-    "name": "Актовый зал",
-    "description": "актовый",
-    "equipmentList": [
-      {
-        "id": 1,
-        "name": "Компьюетер",
-        "description": "Хорошое состояние",
-        "conditions": "Чёрный"
-      },
-      {
-        "id": 2,
-        "name": "Монитор",
-        "description": null,
-        "conditions": "Белый"
-      }
-    ],
-    "locationTime": {
-      "id": 1,
-      "timeStart": "2022-04-15 03:57:38",
-      "timeEnd": "2022-04-16 03:57:40"
-    }
-  
-```

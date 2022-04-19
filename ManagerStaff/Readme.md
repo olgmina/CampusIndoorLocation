@@ -9,10 +9,21 @@
 Как Персонал я хочу знать где/когда/кто проводится мероприятия, использующие оборудование
 
 Как Руководитель я добавляю и удаляю запись о персонале
- 
-![123](https://user-images.githubusercontent.com/82897496/163631780-db1ff587-63a9-4794-8940-ef7ba3fef58b.png)
+ ## Сценарий 1
+
+![image](https://user-images.githubusercontent.com/82897496/164002388-e01a9611-b6db-4bb5-b760-af5170dd8af0.jpeg)
+
+
+ ## Сценарий 2
+![image](https://user-images.githubusercontent.com/82897496/164002416-61cb12b0-9089-4d57-b227-7bdd28549886.jpeg)
+
+
+ ## Сценарий 3
+![3 drawio](https://user-images.githubusercontent.com/82897496/164002416-61cb12b0-9089-4d57-b227-7bdd28549886.jpeg)
+
 
 ## Модель данных
+![3 drawio](https://user-images.githubusercontent.com/82897496/163939607-78d28ede-680e-4d6d-95c2-03700f9df23e.png)
 
 ## Зависимости
 ![image](https://user-images.githubusercontent.com/82897496/163626377-7cd3255e-5b7e-4b8d-9a45-8152ad953572.png)
@@ -24,4 +35,5 @@
 
 /api/managerStaff/add — добавление сотрудника
 
-/api/delete — удаление данных о сотруднике
+/api/delete — удаление списка сотрудников
+/api/managerstaff/{id} - удаление данных о сотруднике

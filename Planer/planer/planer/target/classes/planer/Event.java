@@ -1,9 +1,8 @@
-package client;
+package planer;
 import lombok.*;
-import org.springframework.scheduling.config.IntervalTask;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.sql.Time;
 
 @Getter
 @Setter
@@ -22,7 +21,9 @@ public class Event {
     private String dayOfWeek;
     private String nameTitle;
     private String organization;
-    private String startData;
+    private Time startData;
     private String endData;
     private String location;
+
 }
+

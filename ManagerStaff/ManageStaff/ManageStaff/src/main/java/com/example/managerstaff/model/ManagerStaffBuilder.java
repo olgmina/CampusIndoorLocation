@@ -40,7 +40,7 @@ public class ManagerStaffBuilder {
         ManagerStaff result = new ManagerStaff(this.staffId,this.locationName,this.auidance,
                 this.building,this.date,this.staffName);
         if(staffId != null) {
-            result.setAssertId(staffId);
+            result.setStaffId(staffId);
         }
         return result;
     }
