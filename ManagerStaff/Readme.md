@@ -10,14 +10,17 @@
 
 Как Руководитель я добавляю и удаляю запись о персонале
  ## Сценарий 1
-![Organize](https://user-images.githubusercontent.com/82897496/164001718-a13a1a81-ed5f-4359-b753-2ff3855778d1.jpeg)
+
+![director](https://user-images.githubusercontent.com/82897496/164002388-e01a9611-b6db-4bb5-b760-af5170dd8af0.jpeg)
 
 
  ## Сценарий 2
- ![director](https://user-images.githubusercontent.com/82897496/164001514-e9c0951a-e005-41c5-9dcf-70f3cd40d0a6.jpeg)
+![Organize](https://user-images.githubusercontent.com/82897496/164002416-61cb12b0-9089-4d57-b227-7bdd28549886.jpeg)
+
 
  ## Сценарий 3
- ![Staff](https://user-images.githubusercontent.com/82897496/164001530-a8fbde2d-666d-444d-a7a4-061684c38c4d.jpeg)
+![Staff](https://user-images.githubusercontent.com/82897496/164002432-7068d518-3fe0-4fe3-afe7-20c490114b7d.jpeg)
+
 
 
 ## Модель данных
