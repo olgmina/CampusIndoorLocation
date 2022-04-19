@@ -10,13 +10,19 @@
 
 Как Руководитель я добавляю и удаляю запись о персонале
  
-Как Руководитель я оцениваю загруженность персонала
+![123](https://user-images.githubusercontent.com/82897496/163631780-db1ff587-63a9-4794-8940-ef7ba3fef58b.png)
 
 ## Модель данных
+![3 drawio](https://user-images.githubusercontent.com/82897496/163939607-78d28ede-680e-4d6d-95c2-03700f9df23e.png)
+
+## Зависимости
+![image](https://user-images.githubusercontent.com/82897496/163626377-7cd3255e-5b7e-4b8d-9a45-8152ad953572.png)
 
 ## API сервиса
+/api/managerStaff — список всех сотрудников
 
-/campus/work/id 
+/api/managerStaff/{StaffId} — Информация о конкретном сотруднике
 
-{
-    }
+/api/managerStaff/add — добавление сотрудника
+
+/api/delete — удаление данных о сотруднике
