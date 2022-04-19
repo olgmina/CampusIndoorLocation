@@ -14,7 +14,7 @@
 
 ## Модель данных
 
-##Зависимости
+## Зависимости
 ![diagr](https://user-images.githubusercontent.com/73663755/163938651-088f032d-394e-483b-858d-81ed210b78e6.jpeg)
 
 
