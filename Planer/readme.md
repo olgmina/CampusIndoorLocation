@@ -25,7 +25,7 @@
 Установите и подключите базу данных к Intelji idea. После подключения и запуска приложения в базе данных автоматически создастся таблица.
 
 ## Сценарий использования
-# ![Mvk4DX_jCog.jpg](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/Mvk4DX_jCog.jpg)
+# ![сценапий.png](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D0%BF%D0%B8%D0%B9.png)
 
 
 ## Диаграмма размещения
