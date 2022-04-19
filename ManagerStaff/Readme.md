@@ -9,8 +9,15 @@
 Как Персонал я хочу знать где/когда/кто проводится мероприятия, использующие оборудование
 
 Как Руководитель я добавляю и удаляю запись о персонале
- 
-![123](https://user-images.githubusercontent.com/82897496/163631780-db1ff587-63a9-4794-8940-ef7ba3fef58b.png)
+ ## Сценарий 1
+ ![Organize](https://user-images.githubusercontent.com/82897496/164001504-4316c66a-d533-4270-9bba-083d336185dc.png)
+
+ ## Сценарий 2
+ ![director](https://user-images.githubusercontent.com/82897496/164001514-e9c0951a-e005-41c5-9dcf-70f3cd40d0a6.png)
+
+ ## Сценарий 3
+ ![Staff](https://user-images.githubusercontent.com/82897496/164001530-a8fbde2d-666d-444d-a7a4-061684c38c4d.png)
+
 
 ## Модель данных
 ![3 drawio](https://user-images.githubusercontent.com/82897496/163939607-78d28ede-680e-4d6d-95c2-03700f9df23e.png)
