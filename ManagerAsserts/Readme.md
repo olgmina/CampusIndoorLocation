@@ -14,6 +14,10 @@
 
 ## Модель данных
 
+##Зависимости
+![diagr](https://user-images.githubusercontent.com/73663755/163938651-088f032d-394e-483b-858d-81ed210b78e6.jpeg)
+
+
 ## API сервиса
 /api/managerasserts — список всех оборудований
 
@@ -21,4 +25,6 @@
 
 /api/managerassert/add — добавление оборудования
 
-/api/delete — удаление оборудования
+/api/delete — очистить список оборудований
+/api/delete/{assertId} - удалить конкретное оборудование
+
