@@ -9,7 +9,7 @@
 Как Персонал я хочу знать где/когда/кто проводится мероприятия, использующие оборудование
 
 Как Руководитель я добавляю и удаляю запись о персонале
- ## Диаграмма размещения
+ ## Сценарий 1
 ![диаграмма размещения](https://user-images.githubusercontent.com/82897496/164014823-29b00e63-c4b9-4cbe-94da-100e7a111c3b.jpg)
 
 ## Модель данных
@@ -18,7 +18,7 @@
 ![диаграмма размещения](https://user-images.githubusercontent.com/82897496/164014823-29b00e63-c4b9-4cbe-94da-100e7a111c3b.jpg)
 
 ## Зависимости
-![image](https://user-images.githubusercontent.com/82897496/163626377-7cd3255e-5b7e-4b8d-9a45-8152ad953572.png)
+![pom](https://user-images.githubusercontent.com/82897496/164015499-0fdac1d9-c626-487e-a303-78c039aed5ce.png)
 
 ## API сервиса
 /api/managerStaff — список всех сотрудников
