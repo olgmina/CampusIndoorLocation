@@ -33,9 +33,10 @@
 
 
 ## Диаграмма класса БД
-# ![бд.jpg](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/titul.png)
+# ![бд.jpg](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/%D0%B1%D0%B4.jpg)
 
 ## Результат
+
 # ![titul.png](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/titul.png)
 
 # ![titul2.png](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/titul2.png)
