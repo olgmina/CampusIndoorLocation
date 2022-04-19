@@ -14,7 +14,8 @@
 
 ## Сценарии использования
 ## Сценарий 1 - Организация мероприятий
-![UseCase](https://user-images.githubusercontent.com/73663755/164009889-4fb39444-840d-48b6-b63e-ba13ed520b63.jpg)
+![UseCase](https://user-images.githubusercontent.com/73663755/164010614-178ea369-4c68-495d-b3bf-ebc15eb859ad.jpg)
+
 
 
 ## Сценарий 2 - Администратор системы
