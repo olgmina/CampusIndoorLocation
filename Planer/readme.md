@@ -32,6 +32,9 @@
 # ![Untitled Diagram.drawio.png](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/Untitled%20Diagram.drawio.png)
 
 
+## Диаграмма класса БД
+# ![бд.jpg](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/%D0%B1%D0%B4.jpg)
+
 ## Пользовательские истории
 
 Как Организатор я хочу, чтобы участники были уведомлены о событииях, которые будут или уже идут
