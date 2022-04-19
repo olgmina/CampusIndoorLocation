@@ -28,7 +28,7 @@ ERD диаграмма
 ## Диаграмма размещения
 ![ДиаграмаРазмещения](https://user-images.githubusercontent.com/73663755/164012893-a915acbe-d3fb-48c1-a14b-9a525d2b4f70.jpg)
 
-Диаграмма классов
+## Диаграмма классов
 ![ManagerAssertsApplication](https://user-images.githubusercontent.com/73663755/164009415-8bdb0e8a-096b-4cba-9e09-8f391ab490b0.png)
 
 
