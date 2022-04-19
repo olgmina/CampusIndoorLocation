@@ -27,6 +27,11 @@
 ## Сценарий использования
 # ![Mvk4DX_jCog.jpg](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/Mvk4DX_jCog.jpg)
 
+
+## Диаграмма размещения
+# ![Untitled Diagram.drawio.png](https://github.com/Lyana2021/CampusIndoorLocation/blob/main/Planer/Untitled%20Diagram.drawio.png)
+
+
 ## Пользовательские истории
 
 Как Организатор я хочу, чтобы участники были уведомлены о событииях, которые будут или уже идут
