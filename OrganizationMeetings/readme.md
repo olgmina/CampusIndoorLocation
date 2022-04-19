@@ -1,59 +1,3 @@
-# Сервис организации мероприятия
-
-_Ответственность:_ создание, изменение,просмотр и удаление записи о создаваемых Организатором мероприятиях.
-
-Создание подразумевает опредление времени, места и заказ обрудования.
-
-
-## Сценарий использования
-
-![image](https://user-images.githubusercontent.com/49455695/163052384-5c24193e-b9ce-46af-a84e-52163810835b.png)
-
-## Пользовательские истории
-
-Как Организатор я хочу создать свое мероприятие
-
-Как Участник я хочу получить информацию о мероприятии Организатора
-
-Как Руководитель я хочу знать о всех мероприятиях Организатора, которое запланированы и проведены
-
-## Модель данных
-![image](https://user-images.githubusercontent.com/49455695/163654049-a248b3ff-5173-4a20-9988-e1b80c7395ad.png)
-
-## Диаграмма классов
-![image](https://user-images.githubusercontent.com/49455695/163878500-3affab79-a5d5-4306-9208-ccc8f8a85b9e.png)
-
-## API сервиса
-
-get /api/location </br>
-get /api/location/{id}</br>
-delete /api/location/{id}</br>
-post /api/location</br>
-``` json
-    "id": 1,
-    "name": "Актовый зал",
-    "description": "актовый",
-    "equipmentList": [
-      {
-        "id": 1,
-        "name": "Компьюетер",
-        "description": "Хорошое состояние",
-        "conditions": "Чёрный"
-      },
-      {
-        "id": 2,
-        "name": "Монитор",
-        "description": null,
-        "conditions": "Белый"
-      }
-    ],
-    "locationTime": {
-      "id": 1,
-      "timeStart": "2022-04-15 03:57:38",
-      "timeEnd": "2022-04-16 03:57:40"
-    }
-  
-```
 
 # Сервис организации мероприятий 
 
@@ -61,8 +5,7 @@ post /api/location</br>
 
 ## Сценарий использования
 
-![image](https://user-images.githubusercontent.com/49455695/163654401-6156490f-9c76-4a7e-8b23-be0145698afd.png)
-
+![image](https://user-images.githubusercontent.com/49455695/164014740-d2b9704b-d591-4b76-ad32-bec523a31070.png)
 ## Пользовательские истории
 
 Как Организатор я хочу изменить время/место/  моего мероприятия
@@ -70,10 +13,6 @@ post /api/location</br>
 Как Участник я хочу знать где/когда проводит такое-то мероприятие
 
 Как Руководитель я создаю расписание мероприятий
-
-## Модель данных
-
-![image](https://user-images.githubusercontent.com/49455695/163876855-f4c57e8c-9529-40db-b4be-4549c29c0ac1.png)
 
 ## API сервиса
 
@@ -125,3 +64,56 @@ services:
 2) В powershell </br>
    docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic purchases --from-beginning</br> (Команда получения сообщений из топика) </br>
 
+# Сервис организации мероприятия
+
+_Ответственность:_ создание, изменение,просмотр и удаление записи о создаваемых Организатором мероприятиях.
+
+Создание подразумевает опредление времени, места и заказ обрудования.
+
+
+
+## Пользовательские истории
+
+Как Организатор я хочу создать свое мероприятие
+
+Как Участник я хочу получить информацию о мероприятии Организатора
+
+Как Руководитель я хочу знать о всех мероприятиях Организатора, которое запланированы и проведены
+
+## Модель данных
+![image](https://user-images.githubusercontent.com/49455695/163654049-a248b3ff-5173-4a20-9988-e1b80c7395ad.png)
+
+## Диаграмма классов
+![image](https://user-images.githubusercontent.com/49455695/163878500-3affab79-a5d5-4306-9208-ccc8f8a85b9e.png)
+
+## API сервиса
+
+get /api/location </br>
+get /api/location/{id}</br>
+delete /api/location/{id}</br>
+post /api/location</br>
+``` json
+    "id": 1,
+    "name": "Актовый зал",
+    "description": "актовый",
+    "equipmentList": [
+      {
+        "id": 1,
+        "name": "Компьюетер",
+        "description": "Хорошое состояние",
+        "conditions": "Чёрный"
+      },
+      {
+        "id": 2,
+        "name": "Монитор",
+        "description": null,
+        "conditions": "Белый"
+      }
+    ],
+    "locationTime": {
+      "id": 1,
+      "timeStart": "2022-04-15 03:57:38",
+      "timeEnd": "2022-04-16 03:57:40"
+    }
+  
+```
