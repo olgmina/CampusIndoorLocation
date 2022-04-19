@@ -3,6 +3,7 @@ package com.example.managerasserts;
 import com.example.managerasserts.error.ManagerAssertsValidationError;
 import com.example.managerasserts.error.ManagerAssertsValidationErrorBuffer;
 import com.example.managerasserts.model.ManagerAsserts;
+import com.example.managerasserts.model.ManagerAssertsBuilder;
 import com.example.managerasserts.repository.ManagerAssertsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -48,8 +49,13 @@ public class ManagerAssertsController {
     }
 
     @DeleteMapping("/delete")
-    public ResponseEntity<ManagerAsserts> deleteAssert(@RequestBody ManagerAsserts managerAsserts){
+    public ResponseEntity<ManagerAsserts> deleteAsserts(@RequestBody ManagerAsserts managerAsserts){
         repository.delete(managerAsserts);
+        return ResponseEntity.noContent().build();
+    }
+    @DeleteMapping("/delete/{assertId}")
+    public ResponseEntity<ManagerAsserts> deleteAssert(@PathVariable String assertId){
+        repository.delete(ManagerAssertsBuilder.create().withAssetId(assertId).build());
         return ResponseEntity.noContent().build();
     }
 
