@@ -34,3 +34,4 @@ ERD диаграмма
 
 /api/delete/{assertId} - удалить конкретное оборудование
 
+/api//managerasserts/{assertId}/getStatus - оценить загруженность оборудования
