@@ -6,13 +6,16 @@
 </head>
 <body>
 <div>
+    <h2>Подсчет количества участников по топику:</h2>
     <form method="post" action="getNameTopic">
         <input type="text" name="filter" placeholder="Введите topic" />
         <button type="submit">Найти</button>
     </form>
+    <p>
     <div>Количество участников, посетивших мероприятие: {{total}}
-    </div>
+    </div></p>
 </div>
+<p>
 {{#messages}}
     <div>
         <b>{{id}}</b>
@@ -22,5 +25,6 @@
         <b>{{comment}}</b>
     </div>
 {{/messages}}
+</p>
 </body>
 </html>
