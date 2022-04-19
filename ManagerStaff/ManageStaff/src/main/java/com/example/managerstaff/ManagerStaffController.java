@@ -1,8 +1,10 @@
 package com.example.managerstaff;
 
+import com.example.managerstaff.error.ManagerPersonalValidationErrorBuffer;
 import com.example.managerstaff.error.ManagerStaffValidationError;
 
 import com.example.managerstaff.model.ManagerStaff;
+import com.example.managerstaff.model.ManagerStaffBuilder;
 import com.example.managerstaff.repository.ManagerStaffRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -39,7 +41,7 @@ public class ManagerStaffController {
     public ResponseEntity<?> addStaff(@Validated @RequestBody ManagerStaff managerStaff, Errors errors){
         if (errors.hasErrors()) {
             return ResponseEntity.badRequest().
-                    body(ManagerStaffValidationErrorBuffer.fromBindingErrors(errors));
+                    body(ManagerPersonalValidationErrorBuffer.fromBindingErrors(errors));
         }
         ManagerStaff result = repository.save(managerStaff);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().
@@ -47,9 +49,9 @@ public class ManagerStaffController {
         return ResponseEntity.created(location).build();
     }
 
-    @DeleteMapping("/delete")
-    public ResponseEntity<ManagerStaff> deleteStaff(@RequestBody ManagerStaff managerStaff){
-        repository.delete(managerStaff);
+    @DeleteMapping("/managerstaff/{id}")
+    public ResponseEntity<ManagerStaff> deleteToDo(@PathVariable String id){
+        repository.delete(ManagerStaffBuilder.create().withStaffId(id).build());
         return ResponseEntity.noContent().build();
     }
 
