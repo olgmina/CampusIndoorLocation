@@ -19,8 +19,7 @@
 
 
  ## Сценарий 3
-![3 drawio](
-https://user-images.githubusercontent.com/82897496/164002416-61cb12b0-9089-4d57-b227-7bdd28549886.jpeg)
+![3 drawio](https://user-images.githubusercontent.com/82897496/164002416-61cb12b0-9089-4d57-b227-7bdd28549886.jpeg)
 
 
 ## Модель данных
