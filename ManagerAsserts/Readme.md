@@ -12,6 +12,10 @@
  
 Как Руководитель я оцениваю загруженность оборудования по времени 
 
+## Сценарий использования
+![UseCase](https://user-images.githubusercontent.com/73663755/163997356-85798689-3ef7-4a1d-b182-f224812a9f9a.jpg)
+
+
 ## Модель данных
 ERD диаграмма
 ![3](https://user-images.githubusercontent.com/73663755/163939504-2811ad5e-5f64-44b2-afd6-2f9b07c897b4.jpg)
