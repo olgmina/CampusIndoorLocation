@@ -24,8 +24,8 @@
 
 ## Модель данных
 ERD диаграмма
-![3](https://user-images.githubusercontent.com/73663755/163939504-2811ad5e-5f64-44b2-afd6-2f9b07c897b4.jpg)
 
+![3](https://user-images.githubusercontent.com/73663755/164001755-c1a87489-caab-4cb4-be52-734c819d6dd9.jpg)
 
 Диаграмма классов
 ![diagr](https://user-images.githubusercontent.com/73663755/163938651-088f032d-394e-483b-858d-81ed210b78e6.jpeg)
