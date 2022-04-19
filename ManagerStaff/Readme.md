@@ -10,7 +10,7 @@
 
 Как Руководитель я добавляю и удаляю запись о персонале
  ## Сценарий 1
-![диаграмма размещения](https://user-images.githubusercontent.com/82897496/164014823-29b00e63-c4b9-4cbe-94da-100e7a111c3b.jpg)
+![Organize jpeg drawio](https://user-images.githubusercontent.com/82897496/164017164-06ff8835-749e-405e-b429-e7c4cc0539c7.png)
 
 ## Модель данных
 ![3 drawio](https://user-images.githubusercontent.com/82897496/163939607-78d28ede-680e-4d6d-95c2-03700f9df23e.png)
