@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.Optional;
 
 @CrossOrigin(origins = "http://127.0.0.1:5500/")
 @RestController
@@ -43,6 +44,12 @@ public class ManagerStaffController {
         if (errors.hasErrors()) {
             return ResponseEntity.badRequest().
                     body(ManagerStaffValidationErrorBuffer.fromBindingErrors(errors));
+        }
+        @GetMapping("/managerstaff/{staffId}/getStatus")
+        public  boolean getStafftatus(@PathVariable String staffId){
+            Optional<ManagerStaff> managerStaff1= repository.findById(staffId);
+            ManagerStaff result = managerStaff1.get();
+            return result.isStatus();
         }
         ManagerStaff result = repository.save(managerStaff);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().
