@@ -1,5 +1,11 @@
 package com.example.managerstaff.model;
+import com.sun.istack.NotNull;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 public class ManagerStaffBuilder {
@@ -16,10 +22,11 @@ public class ManagerStaffBuilder {
         return instance;
     }
 
-    public ManagerStaffBuilder withLocation(String name, int auidance, int building, String address) {
+    public ManagerStaffBuilder withLocation(String name, int auidance, int building,String staffName) {
         this.locationName = name;
         this.auidance = auidance;
         this.building = building;
+        this.staffName = staffName;
         return instance;
     }
     public ManagerStaffBuilder witTime(LocalDateTime date) {
@@ -31,8 +38,8 @@ public class ManagerStaffBuilder {
         this.staffId = memberId;
         return instance;
     }
-    public ManagerStaffBuilder withName(String assertName){
-        this.staffName = assertName;
+    public ManagerStaffBuilder withName(String staffName){
+        this.staffName = staffName;
         return instance;
     }
 

@@ -1,10 +1,11 @@
 package com.example.managerstaff;
 
-import com.example.managerstaff.error.ManagerPersonalValidationErrorBuffer;
+import com.example.managerstaff.error.ManagerStaffValidationErrorBuffer;
 import com.example.managerstaff.error.ManagerStaffValidationError;
-
+import com.example.managerstaff.error.ManagerStaffValidationErrorBuffer;
 import com.example.managerstaff.model.ManagerStaff;
 import com.example.managerstaff.model.ManagerStaffBuilder;
+import com.example.managerstaff.repository.ManagerStaffRepository;
 import com.example.managerstaff.repository.ManagerStaffRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -41,7 +42,7 @@ public class ManagerStaffController {
     public ResponseEntity<?> addStaff(@Validated @RequestBody ManagerStaff managerStaff, Errors errors){
         if (errors.hasErrors()) {
             return ResponseEntity.badRequest().
-                    body(ManagerPersonalValidationErrorBuffer.fromBindingErrors(errors));
+                    body(ManagerStaffValidationErrorBuffer.fromBindingErrors(errors));
         }
         ManagerStaff result = repository.save(managerStaff);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().
