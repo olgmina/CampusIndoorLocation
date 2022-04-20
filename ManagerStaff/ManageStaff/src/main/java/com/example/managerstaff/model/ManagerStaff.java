@@ -34,14 +34,15 @@ public class ManagerStaff {
     @NonNull
     private boolean status;
 
-    public ManagerStaff(String staffId, String locationName, int audiance, int building, LocalDateTime date, String staffName) {
+    public ManagerStaff(String staffId, String locationName, int audiance, int building, LocalDateTime date, String staffName, boolean status) {
         this.staffId = staffId;
         this.staffName = staffName;
-        Staff location = new Staff(locationName, audiance, building);
+        Personal location = new Personal(locationName, audiance, building);
         this.locationName = location.getName();
         this.audiance = location.getAudiance();
         this.building = location.getBuilding();
         this.date = date;
+        this.status = status;
     }
 
     @PrePersist
@@ -50,28 +51,15 @@ public class ManagerStaff {
         this.setModifiedTime(LocalDateTime.now());
     }
 
-    private void setModifiedTime(LocalDateTime now) {
-    }
-
-    private void setCreateTime(LocalDateTime now) {
-    }
-
     @PreUpdate
     void onUpdate() {
         this.setModifiedTime(LocalDateTime.now());
     }
 
-
-    public boolean isStatus() {
-        return status;
-    }
-
     public void setStaffId(String staffId) {
     }
 
-    public void getStaffId(String staffId) {
-        return;
-
+    public boolean isStatus() {
+        return this.status;
     }
 }
-

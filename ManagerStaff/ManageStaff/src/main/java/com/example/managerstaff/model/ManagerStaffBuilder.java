@@ -1,11 +1,5 @@
 package com.example.managerstaff.model;
-import com.sun.istack.NotNull;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
 
 public class ManagerStaffBuilder {
@@ -16,17 +10,17 @@ public class ManagerStaffBuilder {
     private int building = 0;
     private String staffName;
     private LocalDateTime date = LocalDateTime.now();
+    private boolean status = true;
     private ManagerStaffBuilder(){}
 
     public static ManagerStaffBuilder create() {
         return instance;
     }
 
-    public ManagerStaffBuilder withLocation(String name, int auidance, int building,String staffName) {
+    public ManagerStaffBuilder withLocation(String name, int auidance, int building, String address) {
         this.locationName = name;
         this.auidance = auidance;
         this.building = building;
-        this.staffName = staffName;
         return instance;
     }
     public ManagerStaffBuilder witTime(LocalDateTime date) {
@@ -38,14 +32,18 @@ public class ManagerStaffBuilder {
         this.staffId = memberId;
         return instance;
     }
-    public ManagerStaffBuilder withName(String staffName){
-        this.staffName = staffName;
+    public ManagerStaffBuilder withName(String assertName){
+        this.staffName = assertName;
+        return instance;
+    }
+    public ManagerStaffBuilder withStatus(boolean status){
+        this.status = status;
         return instance;
     }
 
     public ManagerStaff build() {
         ManagerStaff result = new ManagerStaff(this.staffId,this.locationName,this.auidance,
-                this.building,this.date,this.staffName);
+                this.building,this.date,this.staffName, this.status);
         if(staffId != null) {
             result.setStaffId(staffId);
         }
