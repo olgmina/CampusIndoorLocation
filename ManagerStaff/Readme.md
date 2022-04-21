@@ -21,7 +21,6 @@
 ![диаграмма размещения](https://user-images.githubusercontent.com/82897496/164014823-29b00e63-c4b9-4cbe-94da-100e7a111c3b.jpg)
 
 ## Зависимости
-![pom](https://user-images.githubusercontent.com/82897496/164015499-0fdac1d9-c626-487e-a303-78c039aed5ce.png)
 
 ## API сервиса
 /api/managerStaff — список всех сотрудников
