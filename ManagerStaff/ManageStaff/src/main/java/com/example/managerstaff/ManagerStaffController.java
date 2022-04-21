@@ -32,6 +32,11 @@ public class ManagerStaffController {
         this.busyTimeRepository = busyTimeRepository;
     }
 
+    @GetMapping("/managerstaff/getSchedule")
+    public ResponseEntity<Iterable<BusyTime>> getStaffSchedule(){
+        return ResponseEntity.ok(busyTimeRepository.findAll());
+    }
+
     @GetMapping("/managerstaff")
     public ResponseEntity<Iterable<ManagerStaff>> getManagerStaff(){
         return ResponseEntity.ok(managerStaffRepository.findAll());
@@ -72,7 +77,7 @@ public class ManagerStaffController {
         Optional<ManagerStaff> managerStaff = managerStaffRepository.findByStaffId(staffId);
         if(managerStaff.isPresent()) {
             ManagerStaff staff = managerStaff.get();
-            staff.setStatus(!staff.isStatus());
+            staff.setStatus(false);
             managerStaffRepository.deleteById(staff.getId());
             managerStaffRepository.save(managerStaff.get());
         }
@@ -85,7 +90,7 @@ public class ManagerStaffController {
             ManagerStaff staff = managerStaff.get();
             staff.setAudiance(2222);
             staff.setBuilding(2);
-            staff.setLocationName("ул. Пушкина, д.1");
+            staff.setLocationName("Конференция");
             managerStaffRepository.deleteById(staff.getId());
             managerStaffRepository.save(managerStaff.get());
         }

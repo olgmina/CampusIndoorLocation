@@ -2,7 +2,7 @@ package com.example.managerstaff.model;
 
 import java.time.LocalDateTime;
 
-public class ManagerStaffBuilder {
+public class    ManagerStaffBuilder {
     private static ManagerStaffBuilder instance = new ManagerStaffBuilder();
     private String staffId = null;
     private String locationName = "";

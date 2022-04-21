@@ -26,20 +26,6 @@ public class ManagerStaffRepositoryImpl {
         query.setParameter("staff_id", staff_id);
         return query.getResultList().stream().findFirst();
     }
-    @SuppressWarnings("unused")
-    public void addSomeStaffs(){
-        ManagerStaff[] managerStaffs = {
-                new ManagerStaff("test1", "ул. 20 лет октября", 1404, 1,
-                        LocalDateTime.now(), "Просто Чел", true),
-                new ManagerStaff("test2", "ул. 20 лет октября", 2213, 2,
-                        LocalDateTime.now(), "Просто Чел2", true),
-                new ManagerStaff("test3", "ул. 20 лет октября", 1321, 1,
-                        LocalDateTime.now(), "Просто Чел3", true),
-                new ManagerStaff("test4", "ул. 20 лет октября", 5201, 5,
-                        LocalDateTime.now(), "Просто Чел4", true)
-        };
-        for (ManagerStaff managerStaff : managerStaffs) {
-            repository.save(managerStaff);
-        }
-    }
+
+
 }
