@@ -16,7 +16,8 @@
 
 
 ## Модель данных
-![3 drawio](https://user-images.githubusercontent.com/82897496/163939607-78d28ede-680e-4d6d-95c2-03700f9df23e.png)
+![ModelDannyh drawio](https://user-images.githubusercontent.com/82897496/164457629-eda4587a-a4e5-41e5-a8e2-8151a7808ec4.png)
+
 ## Диаграмма размещения
 ![диаграмма размещения](https://user-images.githubusercontent.com/82897496/164014823-29b00e63-c4b9-4cbe-94da-100e7a111c3b.jpg)
 
