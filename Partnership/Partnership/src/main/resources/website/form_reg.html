@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style_reg.css">
+    <title>CampusIndoorLocation</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="form">
+        <form id="form" class="form_body">
+            <h1 class="form_title">Регистрация на мероприятие</h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label _req">Имя*:</label>
+                    <input id="formName" name="name" class="form_input">
+                </div>
+                <div class="form_item">
+                    <label for="formEmail" class="form_label _req">E-mail*:</label>
+                    <input id="formEmail" name="email" class="form_input">
+                </div>
+                <div class="form_item">
+                    <label for="formMessage" class="form_label">Сообщение:</label>
+                    <textarea name="message" id="formMessage" class="form_input"></textarea>
+                </div>
+                <div class="form_item">
+                <div class="form_label">Кто вы:*</div>
+                    <select name="agent" class="select _req">
+                        <option value="Студент" selected>Студент</option>
+                     <option value="Преподаватель"> Преподаватель</option>
+                     <option value="Волонтёр">Волонтёр</option>
+                    </select>
+                </div>
+            <button id='addButton' type="submit" class="form_button">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<link rel="stylesheet" href="js/reg.js">
+
+<script>
+    window.onload = init;
+
+    function init(){
+        var button = document.getElementById("addButton")
+        button.onclick = handleButtonClick;
+    }
+
+    function handleButtonClick() {
+        alert("Вы успешно зарегестрировались!");
+    }
+</script>
+
+</body>
+</html>
