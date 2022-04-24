@@ -41,7 +41,7 @@
 
 
 ## Зависимости
-# ![DC.jpg](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/main.png?raw=true)
+# ![DC.jpg](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/SpringBootEnrolApplication.png?raw=true)
 
 
 
