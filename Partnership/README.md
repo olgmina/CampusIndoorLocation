@@ -10,10 +10,10 @@
 
 ## Сценарии использования
 ## Сценарий 1 - Претендент-участник
-# ![сценапий.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case.drawio%20(2).png?raw=true)
+# ![сценапий.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case.drawio%20(3).png?raw=true)
 
 ## Сценарий 2- Будущий помощник
-# ![UserCase1](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case_2.drawio%20(2).png?raw=true)
+# ![UserCase1](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case_2.drawio%20(3).png?raw=true)
 
 
 ## Диаграмма размещения
