@@ -15,26 +15,19 @@
 ## Сценарий 2- Будущий помощник
 # ![UserCase1](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case_2.drawio%20(3).png?raw=true)
 
-
 ## Модель данных
-# ![UserCase2](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/Untitled%20Diagram.png?raw=true)
-
-## Диаграмма размещения
 # ![БД](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/%D0%91%D0%94%20(2).jpg?raw=true)
 
+## Диаграмма размещения
+# ![UserCase2](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/Untitled%20Diagram.png?raw=true)
+
 ## Результат
-
 # ![titul.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B.jpg?raw=true)
-
 # ![titul2.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%201.jpg?raw=true)
-
 # ![titul3.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%202.jpg?raw=true)
-
 
 ## Диаграмма классов
 # ![DC.jpg](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/SpringBootEnrolApplication.png?raw=true)
-
-
 
 ## API сервиса
 
