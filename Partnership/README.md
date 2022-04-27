@@ -16,8 +16,8 @@
 ## Сценарий использования №1
 # ![сценапий.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case.drawio.png?raw=true)
 
-## Сценарий использования №2 
-# ![сценапий2.png] (https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case_2.drawio.png?raw=true)
+## Сценарий использования №2
+# ![сценапий2.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case_2.drawio.png?raw=true)
 
 
 ## Диаграмма размещения
