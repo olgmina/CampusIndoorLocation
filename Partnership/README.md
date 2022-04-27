@@ -13,8 +13,11 @@
 
 Установите и подключите базу данных к Intelji idea. После подключения и запуска приложения в базе данных автоматически создастся таблица.
 
-## Сценарий использования
-# ![сценапий.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA1.png?raw=true)
+## Сценарий использования №1
+# ![сценапий.png](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case.drawio.png?raw=true)
+
+## Сценарий использования №2 
+# ![сценапий2.png] (https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case_2.drawio.png?raw=true)
 
 
 ## Диаграмма размещения
