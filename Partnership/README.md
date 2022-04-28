@@ -16,7 +16,7 @@
 # ![UserCase1](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/user_case_2.drawio%20(3).png?raw=true)
 
 ## Модель данных
-# ![БД](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20(1).png?raw=true)
+# ![БД](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%B8%D0%B2%20class-diagram.drawio%20(1).png?raw=true)
 
 ## Диаграмма размещения
 # ![UserCase2](https://github.com/olgmina/CampusIndoorLocation/blob/main/Partnership/164012893-a915acbe-d3fb-48c1-a14b-9a525d2b4f70.png?raw=true)
