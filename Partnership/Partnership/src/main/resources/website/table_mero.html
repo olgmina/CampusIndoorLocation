@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CampusIndoorLocation</title>
+	<style>
+	.wrapper .hide {
+	margin: 0 auto;
+	justify-content: center;
+	background: #ff9;
+	display: none;
+}
+
+input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 300px;
+	border: none;
+	border-bottom: 1px solid #757575;
+}
+
+input:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #1a1a1a;
+}
+
+.table__price {
+	border-collapse: collapse;
+	border-left: 3px solid #263145;
+	border-right: 3px solid #263145;
+	border-bottom: 3px solid #263145;
+	font-family: "Lucida Grande", sans-serif;
+}
+
+.table__price caption {
+	background: #263145;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+	color: white;
+	font-family: "Roboto Slab", serif;
+	font-style: normal;
+	font-size: 26px;
+	text-align: center;
+	margin: 0;
+}
+
+.table__price td,
+.table__price th {
+	padding: 10px;
+}
+
+.table__price th {
+	text-align: left;
+	font-size: 18px;
+}
+
+.table__price tr:nth-child(2n) {
+	background: #E5E5E5;
+}
+
+.table__price td:last-of-type {
+	text-align: center;
+}
+
+.table__price a {
+	display: inline-block;
+	padding: 5px 10px;
+	background: #F79361;
+	box-shadow: 2px 2px 0 0 #a22800;
+	position: relative;
+}
+
+.table__price a:hover {
+	box-shadow: none;
+	top: 2px;
+	left: 2px;
+}
+
+.form__price {
+	float: left;
+	margin-right: 100px;
+	margin-left: 20px;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 class="">Фильтр мероприятий</h1>
+		<form action="" class="form__price">
+			<input type="text" placeholder="Название" autofocus="on" />
+			<input type="text" placeholder="Доступность" />
+			<input type="text" placeholder="Тип" />
+			<input type="text" placeholder="Корпус" />
+			<input type="text" placeholder="Кабинет" />
+			<input type="text" placeholder="Время" />
+		</form>
+		<br>
+		<table class="table__price">
+			<caption>Доступные мероприятия</caption>
+			<tr>
+				<th>Название</th>
+				<th>Доступность</th>
+				<th>Тип</th>
+				<th>Корпус</th>
+				<th>Кабинет</th>
+				<th>Время</th>
+			</tr>
+			<tr>
+				<td>Студенческий лидер</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеучебное</td>
+				<td>2</td>
+				<td>2234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Открытие столовой</td>
+				<td>Студент</td>
+				<td>Внеучебное</td>
+				<td>3</td>
+				<td>3234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Ворошиловский стрелок</td>
+				<td>Преподаватель, Волонтёр</td>
+				<td>Спортивное</td>
+				<td>3</td>
+				<td>3122</td>
+				<td>12:00</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Студенческий лидер</td>
+				<td>Студент, Волонтёр, Преподаватель</td>
+				<td>Семинар</td>
+				<td>1</td>
+				<td>1111</td>
+				<td>14:20</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Студенческий лидер</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>2</td>
+				<td>2234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Ворошиловский стрелок</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>2</td>
+				<td>2234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Открытие столовой</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>2</td>
+				<td>2234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Фестиваль красок</td>
+				<td>Преподаватель, Волонтёр</td>
+				<td>Спортивное</td>
+				<td>7</td>
+				<td>7722</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Открытие столовой</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>2</td>
+				<td>2234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Открытие столовой</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>2</td>
+				<td>2234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Открытие столовой</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>3</td>
+				<td>3234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Открытие столовой</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>5</td>
+				<td>5234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Открытие столовой</td>
+				<td>Студент, Волонтёр</td>
+				<td>Внеурочное</td>
+				<td>2</td>
+				<td>2234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Совещание</td>
+				<td>Преподаватель</td>
+				<td>Семинар</td>
+				<td>5</td>
+				<td>5522</td>
+				<td>10:00</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Семинар по психологии</td>
+				<td>Волонтёр</td>
+				<td>Семинар</td>
+				<td>1</td>
+				<td>1234</td>
+				<td>13:35</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+			<tr>
+				<td>Турнир по шахматам</td>
+				<td>Студент</td>
+				<td>Внеурочное</td>
+				<td>4</td>
+				<td>4123</td>
+				<td>8:30</td>
+				<td><a href="form_reg.html">Записаться</a></td>
+			</tr>
+		</table>
+	</div>
+	<script src="js/script_table.js"></script>
+</body>
+
+</html>
