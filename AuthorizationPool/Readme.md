@@ -15,7 +15,7 @@
 ![image](https://user-images.githubusercontent.com/85519603/166494497-b0bdaf2d-08b5-4f32-ae3c-8656d39903da.png)
 
 ## Модель данных
-![image](https://user-images.githubusercontent.com/85519603/166503658-afd7c1c1-c2ed-42be-af33-b02be69658cf.png)
+![image](https://user-images.githubusercontent.com/85519603/166594620-3360a5b1-e298-4904-bdd4-135f39a782f2.png)
 
 ## Диаграмма классов
 ![image](https://user-images.githubusercontent.com/85519603/166502027-4f1c3816-c8c0-4619-b343-b07252f0072f.png)
