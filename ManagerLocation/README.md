@@ -4,10 +4,10 @@
 
 ## Use-case Диаграммы:
  Сценарий 1
-![1 drawio (4)](https://user-images.githubusercontent.com/76588508/164013816-5432b81e-4842-400f-8d97-c7a2209574b5.png)
+![wdsf drawio (1)](https://user-images.githubusercontent.com/76588508/166666396-36dea743-b621-4f8d-8c8f-2a6b2dd43d35.png)
  
  Сценарий 2
-![1 drawio (5)](https://user-images.githubusercontent.com/76588508/164013845-412559eb-e1e0-464d-afed-53cb415e3377.png)
+![wdsf drawio](https://user-images.githubusercontent.com/76588508/166666427-17bf360b-c7ff-49f4-aa54-59577beccaff.png)
 
 ## Пользовательские истории
 
@@ -20,9 +20,6 @@
 
 ## Модель данных
 ![12 drawio](https://user-images.githubusercontent.com/76588508/164015862-cb18507f-6bab-400b-9838-691194f0cf9a.png)
-
-## Диграмма зависимостей
-![9d39e576-44a8-498d-919f-1b672180564f](https://user-images.githubusercontent.com/76588508/164016691-2ee558fb-86e0-4ee7-9b01-4a33387e7ff9.jpg)
 
 ## API сервиса
 
