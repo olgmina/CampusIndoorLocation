@@ -18,3 +18,5 @@
 ## API сервиса
 /localhost:8080/users
 
+/localhost:8080/signUp
+
