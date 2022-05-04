@@ -4,10 +4,12 @@
 
 ## Use-case Диаграммы:
  Сценарий 1
-![wdsf drawio (1)](https://user-images.githubusercontent.com/76588508/166666396-36dea743-b621-4f8d-8c8f-2a6b2dd43d35.png)
+ 
+![wdsf drawio](https://user-images.githubusercontent.com/76588508/166666427-17bf360b-c7ff-49f4-aa54-59577beccaff.png)
  
  Сценарий 2
-![wdsf drawio](https://user-images.githubusercontent.com/76588508/166666427-17bf360b-c7ff-49f4-aa54-59577beccaff.png)
+ 
+![wdsf drawio (1)](https://user-images.githubusercontent.com/76588508/166666396-36dea743-b621-4f8d-8c8f-2a6b2dd43d35.png)
 
 ## Пользовательские истории
 
