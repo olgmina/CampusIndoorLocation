@@ -15,10 +15,10 @@
 ![image](https://user-images.githubusercontent.com/85519603/166494497-b0bdaf2d-08b5-4f32-ae3c-8656d39903da.png)
 
 ## Модель данных
-![image](https://user-images.githubusercontent.com/85519603/166594620-3360a5b1-e298-4904-bdd4-135f39a782f2.png)
+![image](https://user-images.githubusercontent.com/85519603/166682262-43a1f6e5-9ef6-40c4-b09b-6101ab2205a4.png)
 
 ## Диаграмма классов
-![image](https://user-images.githubusercontent.com/85519603/166502027-4f1c3816-c8c0-4619-b343-b07252f0072f.png)
+![image](https://user-images.githubusercontent.com/85519603/166682332-89df5194-037b-48f6-8952-64d851792356.png)
 
 ## API сервиса
 ![image](https://user-images.githubusercontent.com/85519603/165559457-8e7f7828-19d1-452f-8560-d97498e57f32.png)
