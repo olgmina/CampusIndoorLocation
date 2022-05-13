@@ -36,3 +36,6 @@
 /api/delete/{locationId} - удалить конкретное рассписание аудитоии
 
 ?получить список свободных аудиторий в выбранное время как?
+
+spring.jackson.date-format=dd-MM-YY HH:mm:ss
+spring.jackson.time-zone=Europe/Moscow
