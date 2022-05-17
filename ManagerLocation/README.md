@@ -34,3 +34,5 @@
 /api/delete — удалить всё рассписание аудотрий
 
 /api/delete/{locationId} - удалить конкретное рассписание аудитоии
+
+/api/GetFreeLocation
