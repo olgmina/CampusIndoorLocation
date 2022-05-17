@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const getUrl = 'http://localhost:8080/api/locations';
+      const putUrl = 'http://localhost:8080/api/locations/add';
+      const delUrl = 'http://localhost:8080/api/locations/';
+      const testUrl = 'http://localhost:8080/api/locations/test';
+      const getFreeClassroomUrl = 'http://localhost:8080/api/locations/getFreeLocations';
+
+      const Test = (props) => {
+        const [data, setData] = React.useState([]);
+        const [schedule, setSchedule] = React.useState([]);
+        const [notification, setNotification] = React.useState({});
+        const [deleteNot, setDeleteNot] = React.useState({});
+        const [freeTime, setFreeTime] = React.useState({});
+        
+        const getData = async () => {
+          const response = await fetch(getUrl);
+          setData(response.ok ? await response.json() : null);
+          const secondResponse = await fetch(getUrl + '/getSchedule');
+          setSchedule(secondResponse.ok ? await secondResponse.json() : null);
+        }
+
+        const createNotification = async (data) => {
+          const response = await fetch(putUrl, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json;charset=utf-8'
+              },
+            body: JSON.stringify(data)
+          })
+          if(response.ok) {
+            getData()
+          }
+        }
+
+        const createTestLocations = async (data) => {
+          const response = await fetch(testUrl, {
+            headers: {
+              'Content-Type': 'application/json;charset=utf-8'
+            }
+          })
+          if(response.ok) {
+            getData()
+          }
+        }
+        
+        const deleteNotification = async (data) => {
+          const response = await fetch(delUrl + data.id, {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json;charset=utf-8'
+              },
+            body: JSON.stringify(data)
+          })
+          if(response.ok) {
+            getData()
+          }
+        }
+
+        const getFreeClassroom = async (dataForRequest) => {
+          const response = await fetch(getFreeClassroomUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json;charset=utf-8'
+              },
+            body: JSON.stringify({...dataForRequest, locationId: "asdf"})
+          })
+          if(response.ok) {
+            let busyClassrooms = await response.json();
+            let ids = [];
+            data.map(item => ids.push(item.id));
+            busyClassrooms.map(classroom => {
+              ids = ids.filter(id => !classroom.locationId.startsWith(id));
+            });
+            console.log(ids);
+            let newData = [];
+            data.map(item => {
+              ids.map(id => {
+                if(item.id.startsWith(id)) newData.push(item);
+              });
+            });
+            setData(newData);
+          }
+        }
+
+        function handleInputChange(e) {
+            const {name, value} = e.target;
+            setNotification({...notification, [name]: value});
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            createNotification(notification);
+        }
+
+        function handleSubmitTestArray(e) {
+            e.preventDefault();
+            createTestLocations();
+        }
+
+        function handleDeleteInputChange(e) {
+            const {name, value} = e.target;
+            setDeleteNot({...deleteNot, [name]: value});
+        }
+
+        function handleDeleteSubmit(e) {
+            e.preventDefault();
+            data.map((item) => {
+              if(deleteNot.deleteId.startsWith(item.id)) deleteNotification(item);
+            });
+        }
+
+        function handleFreeTimesInputChange(e) {
+            const {name, value} = e.target;
+            setFreeTime({...freeTime, [name]: value});
+        }
+
+        function handleFreeTimesSubmit(e) {
+            e.preventDefault();
+            getFreeClassroom(freeTime);
+        }
+
+
+        React.useEffect(() => {
+          getData()
+        }, [])
+
+        return (
+          <div>
+            <div>
+              <window.ReactBootstrap.Form id="TableForm">
+                  <window.ReactBootstrap.Form.Group>
+                      <window.ReactBootstrap.Form.Control id="classroomInput" size="text" type="text" name="classroom" placeholder="Аудитория" onChange={handleInputChange} /><br />
+                      <window.ReactBootstrap.Form.Control id="floorInput" size="text" type="text" name="floor" placeholder="Этаж" onChange={handleInputChange} /><br />
+                      <window.ReactBootstrap.Form.Control id="buildingInput" size="text" type="text" name="building" placeholder="Корпус" onChange={handleInputChange} /><br />
+                      <window.ReactBootstrap.Form.Control id="addressInput" size="text" type="text" name="address" placeholder="Адрес" onChange={handleInputChange} /><br />
+                      <window.ReactBootstrap.Form.Control id="statusInput" size="text" type="text" name="status" placeholder="Свободно" onChange={handleInputChange} />
+                  </window.ReactBootstrap.Form.Group>
+                  <window.ReactBootstrap.Button variant="primary" type="submit" onClick={handleSubmit}>Добавить локацию</window.ReactBootstrap.Button>
+              </window.ReactBootstrap.Form>
+              <hr/>
+              <window.ReactBootstrap.Button variant="primary" type="submit" onClick={handleSubmitTestArray}>Добавить тестовые локации</window.ReactBootstrap.Button>
+              <hr/>
+              <window.ReactBootstrap.Form id="TableForm2">
+                  <window.ReactBootstrap.Form.Group>
+                      <window.ReactBootstrap.Form.Control id="locationIdDeleteInput" size="text" type="text" name="deleteId" placeholder="Location id" onChange={handleDeleteInputChange} />
+                  </window.ReactBootstrap.Form.Group>
+                  <window.ReactBootstrap.Button variant="primary" type="submit" onClick={handleDeleteSubmit}>Удалить локацию</window.ReactBootstrap.Button>
+              </window.ReactBootstrap.Form>
+              <hr/>
+              <window.ReactBootstrap.Form id="TableForm3">
+                  <window.ReactBootstrap.Form.Group>
+                      <window.ReactBootstrap.Form.Control id="fromInput" size="text" type="text" name="startDateTime" placeholder="Свободно с" onChange={handleFreeTimesInputChange} /><br />
+                      <window.ReactBootstrap.Form.Control id="toInput" size="text" type="text" name="endDateTime" placeholder="До" onChange={handleFreeTimesInputChange} />
+                  </window.ReactBootstrap.Form.Group>
+                  <window.ReactBootstrap.Button variant="primary" type="submit" onClick={handleFreeTimesSubmit}>Найти</window.ReactBootstrap.Button>
+              </window.ReactBootstrap.Form>
+              <hr/>
+            </div>
+
+            {data.map(item => {return (
+              <div key={item.id}>
+                <pre>Location id: {item.id}</pre>
+                <pre>Аудитория: {item.classroom}</pre>
+                <pre>Этаж: {item.floor}</pre>
+                <pre>Корпус: {item.building}</pre>
+                <pre>Адрес: {item.address}</pre>
+                <pre>Свободно: {item.status ? "Да" : "Нет"}</pre>
+                <div>
+                  {schedule.map(part => {if(part.locationId.startsWith(item.id)) return (
+                    <div key={part.id}>
+                      <pre>Занято с: {part.startDateTime}</pre>
+                      <pre>До: {part.endDateTime}</pre>
+                    </div>
+                  )})}
+                </div>
+                <hr/>
+              </div>
+              )})}
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <Test/>,
+        document.getElementById('root')
+      );
+    </script>
+
+  </body>
+</html>
