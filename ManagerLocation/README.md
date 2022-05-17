@@ -35,4 +35,4 @@
 
 /api/delete/{locationId} - удалить конкретное рассписание аудитоии
 
-/api/GetFreeLocation
+/api/GetFreeLocation - получение свободных аудиторий
