@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${Title}"></title>
+</head>
+<body>
+<form action="/edit4" method="post">
+
+    <h3>Редактирование пользователя <span th:text="${name}"></span></h3>
+    <br>
+    <br>
+    <h4>Локация: <span><input type="text" name="location" /></span></h4>
+    <h4>Время: <span><input type="text" name="date" /></span></h4>
+    <h4>Персонал: <span><input type="text" name="staff" /></span></h4>
+    <h4>Оборудование:<span><input type="text" name="equipment" /></span></h4>
+    <br>
+    <button type="submit">Принять</button>
+    <br>
+    <br>
+    <a href="/admin">Назад</a>
+</form>
+</body>
+</html>

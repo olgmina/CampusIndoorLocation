@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${Title}"></title>
+    <style>
+        .wrapper .hide {
+            margin: 0 auto;
+            justify-content: center;
+            background: #ff9;
+            display: none;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid #757575;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        .table__event {
+            border-collapse: collapse;
+            border-left: 3px solid #263145;
+            border-right: 3px solid #263145;
+            border-bottom: 3px solid #263145;
+            font-family: "Lucida Grande", sans-serif;
+        }
+
+        .table__event caption {
+            background: #263145;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+            color: white;
+            font-family: "Roboto Slab", serif;
+            font-style: normal;
+            font-size: 26px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .table__event td,
+        .table__event th {
+            padding: 10px;
+        }
+
+        .table__event th {
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .table__event tr:nth-child(2n) {
+            background: #E5E5E5;
+        }
+
+        .table__event td:last-of-type {
+            text-align: center;
+        }
+
+        .table__event a {
+            display: inline-block;
+            padding: 5px 10px;
+            background: darkgrey;
+            box-shadow: 2px 2px 0 0 darkgrey;
+            position: relative;
+        }
+
+        .table__event a:hover {
+            box-shadow: none;
+            top: 2px;
+            left: 2px;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#f5f5f5">
+<div class="wrapper" >
+    <h1 class="">Страница администрирования пользователей</h1>
+    <table class="table__event">
+        <caption>Зарегестрированные пользователи</caption>
+        <tr>
+            <th>Пользователь</th>
+            <th>Локация</th>
+            <th>Время</th>
+            <th>Персонал</th>
+            <th>Оборудование</th>
+        </tr>
+        <tr>
+            <td th:text="${name1}"></td>
+            <td th:text="${loca1}"></td>
+            <td th:text="${date1}"></td>
+            <td th:text="${staff1}"></td>
+            <td th:text="${eq1}"></td>
+            <td><a href="/edit1">Редактировать</a></td>
+        </tr>
+        <tr>
+            <td th:text="${name2}"></td>
+            <td th:text="${loca2}"></td>
+            <td th:text="${date2}"></td>
+            <td th:text="${staff2}"></td>
+            <td th:text="${eq2}"></td>
+            <td><a href="/edit2">Редактировать</a></td>
+        </tr>
+        <tr>
+            <td th:text="${name3}"></td>
+            <td th:text="${loca3}"></td>
+            <td th:text="${date3}"></td>
+            <td th:text="${staff3}"></td>
+            <td th:text="${eq3}"></td>
+            <td><a href="/edit3">Редактировать</a></td>
+        </tr>
+        <tr>
+            <td th:text="${name4}"></td>
+            <td th:text="${loca4}"></td>
+            <td th:text="${date4}"></td>
+            <td th:text="${staff4}"></td>
+            <td th:text="${eq4}"></td>
+            <td><a href="/edit4">Редактировать</a></td>
+        </tr>
+        <tr>
+            <td th:text="${name5}"></td>
+            <td th:text="${loca5}"></td>
+            <td th:text="${date5}"></td>
+            <td th:text="${staff5}"></td>
+            <td th:text="${eq5}"></td>
+            <td><a href="/edit5">Редактировать</a></td>
+        </tr>
+    </table>
+</div>
+<script src="js/script_table.js"></script>
+</body>
+</html>

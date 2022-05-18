@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${Title}"></title>
+
+    <style>
+        .wrapper .hide {
+            margin: 0 auto;
+            justify-content: center;
+            background: #ff9;
+            display: none;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid #757575;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        .table__event {
+            border-collapse: collapse;
+            border-left: 3px solid #263145;
+            border-right: 3px solid #263145;
+            border-bottom: 3px solid #263145;
+            font-family: "Lucida Grande", sans-serif;
+        }
+
+        .table__event caption {
+            background: #263145;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+            color: white;
+            font-family: "Roboto Slab", serif;
+            font-style: normal;
+            font-size: 26px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .table__event td,
+        .table__event th {
+            padding: 10px;
+        }
+
+        .table__event th {
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .table__event tr:nth-child(2n) {
+            background: #E5E5E5;
+        }
+
+        .table__event td:last-of-type {
+            text-align: center;
+        }
+
+        .table__event a {
+            display: inline-block;
+            padding: 5px 10px;
+            background: darkgrey;
+            box-shadow: 2px 2px 0 0 #a22800;
+            position: relative;
+        }
+
+        .table__event a:hover {
+            box-shadow: none;
+            top: 2px;
+            left: 2px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper" >
+        <h1 class="">Информация о пользователе <span th:utext="${Name}"></span></h1>
+        <br>
+        <br>
+        <br>
+        <h3>Добро пожаловать! </h3>
+        <br>
+        <br>
+        <table class="table__event">
+            <caption>Политика</caption>
+            <tr>
+                <th>Локации</th>
+                <th>Время</th>
+                <th>Персонал</th>
+                <th>Оборудование</th>
+            </tr>
+            <tr>
+                <td th:text="${Location}"></td>
+                <td th:text="${Date}"></td>
+                <td th:text="${Staff}"></td>
+                <td th:text="${Equipment}"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
