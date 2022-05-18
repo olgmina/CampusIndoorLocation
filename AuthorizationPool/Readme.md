@@ -18,5 +18,6 @@
 ![image](https://user-images.githubusercontent.com/85519603/168802290-c5274c22-e183-41b3-aa04-bbc14d85fa3c.png)
 
 ## API сервиса
-![image](https://user-images.githubusercontent.com/85519603/165559457-8e7f7828-19d1-452f-8560-d97498e57f32.png)
+![image](https://user-images.githubusercontent.com/85519603/168939499-8c86f13a-15f0-4f65-952f-0f21ac5a20f3.png)
+
 
