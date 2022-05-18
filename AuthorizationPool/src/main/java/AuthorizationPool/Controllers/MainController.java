@@ -70,8 +70,8 @@ public class MainController {
     }
 
     @PostMapping (value = "/userPage")
-    public String signUp(@RequestParam String username, @RequestParam String password, Model model){
-        if(Objects.equals(username, user1.getName())){
+    public String signUp(Principal principal, Model model){
+        if(Objects.equals(principal.getName(), user1.getName())){
             model.addAttribute("Title", "Страница Пользователя");
             model.addAttribute("Name", user1.getName());
             model.addAttribute("Location", String.valueOf(user1.getPolicy().getLocation()));
@@ -79,7 +79,7 @@ public class MainController {
             model.addAttribute("Staff", String.valueOf(user1.getPolicy().getStaff()));
             model.addAttribute("Equipment", String.valueOf(user1.getPolicy().getEquipment()));
             return "userPage";
-        }else if(Objects.equals(username, user2.getName())){
+        }else if(Objects.equals(principal.getName(), user2.getName())){
             model.addAttribute("Title", "Страница Пользователя");
             model.addAttribute("Name", user2.getName());
             model.addAttribute("Location", String.valueOf(user2.getPolicy().getLocation()));
@@ -87,7 +87,7 @@ public class MainController {
             model.addAttribute("Staff", String.valueOf(user2.getPolicy().getStaff()));
             model.addAttribute("Equipment", String.valueOf(user2.getPolicy().getEquipment()));
             return "userPage";
-        }else if(Objects.equals(username, user3.getName())){
+        }else if(Objects.equals(principal.getName(), user3.getName())){
             model.addAttribute("Title", "Страница Пользователя");
             model.addAttribute("Name", user3.getName());
             model.addAttribute("Location", String.valueOf(user3.getPolicy().getLocation()));
@@ -95,7 +95,7 @@ public class MainController {
             model.addAttribute("Staff", String.valueOf(user3.getPolicy().getStaff()));
             model.addAttribute("Equipment", String.valueOf(user3.getPolicy().getEquipment()));
             return "userPage";
-        }else if(Objects.equals(username, user4.getName())){
+        }else if(Objects.equals(principal.getName(), user4.getName())){
             model.addAttribute("Title", "Страница Пользователя");
             model.addAttribute("Name", user4.getName());
             model.addAttribute("Location", String.valueOf(user4.getPolicy().getLocation()));
@@ -103,7 +103,7 @@ public class MainController {
             model.addAttribute("Staff", String.valueOf(user4.getPolicy().getStaff()));
             model.addAttribute("Equipment", String.valueOf(user4.getPolicy().getEquipment()));
             return "userPage";
-        }else if(Objects.equals(username, user5.getName())){
+        }else if(Objects.equals(principal.getName(), user5.getName())){
             model.addAttribute("Title", "Страница Пользователя");
             model.addAttribute("Name", user5.getName());
             model.addAttribute("Location", String.valueOf(user5.getPolicy().getLocation()));
