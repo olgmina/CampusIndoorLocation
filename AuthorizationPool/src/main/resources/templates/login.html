@@ -7,9 +7,15 @@
 </head>
 <body>
 <h3>Введите логин и пароль:</h3>
-<form action="/userPage" method="post">
 
+<div th:if="${param.error}">
+    Invalid username and password.
+</div>
+<div th:if="${param.logout}">
+    You have been logged out.
+</div>
 
+<form th:action="@{/login}" action="/userPage" method="post">
             <h4>Логин:</h4>
             <input type="text" name="username"/>
     <br>
@@ -19,7 +25,12 @@
     <br>
     <br>
             <button type="submit">Вход</button>
+    <br>
+    <br>
+    <a href="/userPage">Страница пользователя</a>
 </form>
+<br>
+<br>
 <h3>Логин/Пароль:</h3>
 <ul>
     <li>Хмельнин А.С./123</li>

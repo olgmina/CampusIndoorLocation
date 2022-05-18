@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.Objects;
 
 @Controller
@@ -16,11 +17,56 @@ public class MainController {
         model.addAttribute("Title", "Страница входа");
         return "login";
     }
+    @GetMapping("/login")
+    public String login2(Model model) {
+        model.addAttribute("Title", "Страница входа");
+        return "login";
+    }
 
     @GetMapping("/userPage")
-    public String userPage(Model model){
+    public String userPage(Model model, Principal principal){
         model.addAttribute("Title", "Страница Пользователя");
-        return "userPage";
+        model.addAttribute("name", principal.getName());
+        if(Objects.equals(principal.getName(), "Хмельнин А.С.")){
+            model.addAttribute("location", String.valueOf(user1.getPolicy().getLocation()));
+            model.addAttribute("date", String.valueOf(user1.getPolicy().getDate()));
+            model.addAttribute("staff", String.valueOf(user1.getPolicy().getStaff()));
+            model.addAttribute("equipment", String.valueOf(user1.getPolicy().getEquipment()));
+            return "userPage";
+        }else if(Objects.equals(principal.getName(), "Захаева А.А.")){
+            model.addAttribute("location", String.valueOf(user2.getPolicy().getLocation()));
+            model.addAttribute("date", String.valueOf(user2.getPolicy().getDate()));
+            model.addAttribute("staff", String.valueOf(user2.getPolicy().getStaff()));
+            model.addAttribute("equipment", String.valueOf(user2.getPolicy().getEquipment()));
+            return "userPage";
+        }else if(Objects.equals(principal.getName(), "Вахаев Б.П.")){
+            model.addAttribute("location", String.valueOf(user3.getPolicy().getLocation()));
+            model.addAttribute("date", String.valueOf(user3.getPolicy().getDate()));
+            model.addAttribute("staff", String.valueOf(user3.getPolicy().getStaff()));
+            model.addAttribute("equipment", String.valueOf(user3.getPolicy().getEquipment()));
+            return "userPage";
+        }else if(Objects.equals(principal.getName(), "Лучикова Н.Г.")){
+            model.addAttribute("location", String.valueOf(user4.getPolicy().getLocation()));
+            model.addAttribute("date", String.valueOf(user4.getPolicy().getDate()));
+            model.addAttribute("staff", String.valueOf(user4.getPolicy().getStaff()));
+            model.addAttribute("equipment", String.valueOf(user4.getPolicy().getEquipment()));
+            return "userPage";
+        }else if(Objects.equals(principal.getName(), "Красаев Н.Е.")){
+            model.addAttribute("location", String.valueOf(user5.getPolicy().getLocation()));
+            model.addAttribute("date", String.valueOf(user5.getPolicy().getDate()));
+            model.addAttribute("staff", String.valueOf(user5.getPolicy().getStaff()));
+            model.addAttribute("equipment", String.valueOf(user5.getPolicy().getEquipment()));
+            return "userPage";
+        }else if(Objects.equals(principal.getName(), "admin")){
+            model.addAttribute("location", "100");
+            model.addAttribute("date", "100");
+            model.addAttribute("staff", "100");
+            model.addAttribute("equipment", "100");
+            return "userPage";
+        }else {
+            return "userPage";
+        }
+
     }
 
     @PostMapping (value = "/userPage")
@@ -71,7 +117,7 @@ public class MainController {
     }
 
     @GetMapping("/admin")
-    public String adminPage(Model model){
+    public String adminPage(Model model, Principal principal){
         model.addAttribute("Title", "Страница Администратора");
 
         model.addAttribute("name1", user1.getName());

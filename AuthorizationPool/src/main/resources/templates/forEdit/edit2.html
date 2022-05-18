@@ -6,7 +6,7 @@
     <title th:text="${Title}"></title>
 </head>
 <body>
-    <form action="/edit2" method="post">
+    <form th:action="@{/edit2}" action="/edit2" method="post">
 
         <h3>Редактирование пользователя <span th:text="${name}"></span></h3>
         <br>

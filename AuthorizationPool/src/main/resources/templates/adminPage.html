@@ -83,6 +83,10 @@
             top: 2px;
             left: 2px;
         }
+
+        form {
+            margin: 20px;
+        }
     </style>
 
 </head>
@@ -140,7 +144,10 @@
             <td><a href="/edit5">Редактировать</a></td>
         </tr>
     </table>
-</div>
+    </div>
+<form th:action="@{/logout}" method="post">
+    <button type="submit">Выйти</button>
+</form>
 <script src="js/script_table.js"></script>
 </body>
 </html>

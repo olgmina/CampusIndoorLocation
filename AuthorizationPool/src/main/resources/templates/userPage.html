@@ -89,7 +89,7 @@
 </head>
 <body>
     <div class="wrapper" >
-        <h1 class="">Информация о пользователе <span th:utext="${Name}"></span></h1>
+        <h1 class="">Информация о пользователе <span th:text="${name}"></span> </h1>
         <br>
         <br>
         <br>
@@ -105,12 +105,17 @@
                 <th>Оборудование</th>
             </tr>
             <tr>
-                <td th:text="${Location}"></td>
-                <td th:text="${Date}"></td>
-                <td th:text="${Staff}"></td>
-                <td th:text="${Equipment}"></td>
+                <td th:text="${location}"></td>
+                <td th:text="${date}"></td>
+                <td th:text="${staff}"></td>
+                <td th:text="${equipment}"></td>
             </tr>
         </table>
     </div>
+    <form th:action="@{/logout}" method="post">
+        <br>
+        <br>
+        <button type="submit">Выйти</button>
+    </form>
 </body>
 </html>
