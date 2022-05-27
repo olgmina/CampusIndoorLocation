@@ -7,7 +7,7 @@
 Я как Аудитор хочу управлять категориями.
 
 ## Сценарий - Контроль и анализ категорий мероприятий
-![UC2](https://user-images.githubusercontent.com/80773270/166610903-784835fc-085f-4f86-81f9-75283c74eff1.PNG)
+![Финал](https://user-images.githubusercontent.com/80773270/170641957-755bda83-b2d7-4d92-8c0c-f1ae70dd46f3.PNG)
 
 ## Модель данных
 ![МД2](https://user-images.githubusercontent.com/80773270/166610927-448d45d6-0fc6-4068-96c5-9e233eaccd2f.PNG)
